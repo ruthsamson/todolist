@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: 'IM Fell English SC', serif;   
+    display: flex;
+}
+
+.container {
+    background: linear-gradient(cornsilk, black);
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.todolist {
+    background: cornsilk;
+    display: flex;
+    flex-direction: column;
+    min-width: 400px;
+    max-width: 600px;
+    border-radius: 10px;
+    height: 500px;
+    box-shadow: 0px 0px 20px black;
+}
+
+.header {
+    padding: 2em;
+}
+
+.header h1 {
+    color: purple;
+    text-align: center;
+
+}
+
+.list {
+    flex-grow: 1;
+    padding: 2em;
+    overflow-y: scroll;
+}
+
+/*added through js*/
+.list ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+
+/*delete button js*/
+.delete {
+    cursor: pointer;
+    color: red;
+    padding: 1em;
+}
+
+.delete:hover {
+    background-color:lightgray;
+}
+
+/* not connecting to i
+.list ul li i {
+    cursor: pointer;
+    color: red;
+    padding: 1em;
+}
+
+.list ul li i:hover {
+    background-color: gray;
+
+}
+*/
+
+.add-task {
+    padding: 2em;
+    display: flex;
+}
+
+.add-task input {
+
+    border: 1px solid cornsilk;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    flex-grow: 1;
+    padding: 1em;
+    outline: none;
+}
+
+.add-task input:hover{
+    border: 1px solid purple;
+
+}
+
+.add-task input:active {
+    border: 1px solid purple;
+
+}
+
+
+.add-task input:focus {
+    border: 1px solid purple;
+
+}
+
+.add-task button {
+    outline: none;
+    border: none;
+    padding: 1em;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px gray;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+}
