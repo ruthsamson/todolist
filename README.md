@@ -1,8 +1,8 @@
 # `README.md` - To Do List
 
-## 👾 About the App
+## 📝 About the App
 
-A themed quest to-do list 
+A themed to-do list website
 
 ## 📸 Project Screenshots
 
